@@ -1,9 +1,11 @@
 <div class="container-form">
-  <input type="text" name="" placeholder="Codigo del pedido">
-  <select name="">
-    <option>Seleccione un tipo de documento</option>
-    <option>CC</option>
-    <option>TI</option>
-  </select>
-  <input type="text" name="" placeholder="Documento">
+  <form [formGroup]="form" (ngSubmit)="getOrder()">
+    <input type="text" placeholder="Codigo del pedido" formControlName="order_code">
+    <select formControlName="document_type">
+      <option>Seleccione un tipo de documento</option>
+      <option>CC</option>
+      <option>TI</option>
+    </select>
+    <input type="text" placeholder="Documento" formControlName="document">
+  </form>
 </div>
