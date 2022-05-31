@@ -1,0 +1,14 @@
+
+.container-form {
+  width: 500px;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/foto-gratis/hermoso-arbol-medio-campo-cubierto-hierba-linea-arboles-fondo_181624-29267.jpg?w=2000");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  input, select {
+    width: 100%;
+  }
+  padding: 10px;
+}
